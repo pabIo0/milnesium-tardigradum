@@ -1,1 +1,0 @@
-### SEMPRE UPAR ARQUIVOS EM main.c ###
