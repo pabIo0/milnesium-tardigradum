@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL,"Portuguese");
+
+    const int A = 11;
+    const int B = 5;
+    int C = A * B;
+    char nome_do_aluno ['C'];
+    int idade, i;
+    char genero ['A'];
+    float peso;
+
+    printf("\n=======================================================");
+        printf("\n\t   ACADEMIA CEFET- LEOPOLDINA");
+        printf("\n\t     bem-vindo ao sistema! \n");
+        printf("\n=======================================================");
+
+        printf("\n\t       CADASTRO DE ALUNOS ");
+        printf("\n-------------------------------------------------------\n\n");
+
+    for(i=1;i<300;i++)
+    {
+
+    system("color 80");
+    system("pause");
+    system("cls");
+
+    printf("\n\nNome do aluno: ");
+    scanf("%s", nome_do_aluno);
+    fflush(stdin);
+
+    printf("\n\nIdade do aluno: ");
+    scanf("%d", &idade);
+    fflush(stdin);
+
+    printf("\n\nSexo do aluno (M/F): ");
+    scanf("%s", genero);
+    fflush(stdin);
+
+    printf("\n\nPeso do aluno (KG): ");
+    scanf("%f", &peso);
+    fflush(stdin);
+
+    printf("\n\t       CADASTRO FINALIZADO! \n\n");
+
+    system("pause");
+    system("cls");
+
+    printf("\nAluno: %d", i);
+    printf("\nNome: %s", nome_do_aluno);
+    printf("\nIdade: %d Anos", idade);
+    printf("\nSexo: %s", genero);
+    printf("\nPeso: %.2f Kg\n\n", peso);
+
+    printf("\n\t       Para nova ficha ");
+    printf("\n-------------------------------------------------------\n\n");
+    }
+
+    return 0;
+}
