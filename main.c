@@ -1,38 +1,55 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <locale.h>
 
 int main()
 {
+    setlocale(LC_ALL,"Portuguese");
 
- setlocale(LC_ALL,"");
+    char nome [50];
+    int idade, i;
+    char genero [10];
+    float peso;
 
- system("color 17");
+    for(i=1;i<6;i++)
+    {
+        printf("\n=======================================================");
+        printf("\n\n\t ACADEMIA CEFET- LEOPOLDINA \n");
+        printf("\n=======================================================");
 
- float n1[3],n2[3],media[3];
-int a;
+        printf("\n\t       CADASTRO DE ALUNOS ");
+        printf("\n-------------------------------------------------------\n\n");
 
- for(a=0;a<3;a++)
-{
-system("pause");
-system("cls");
+    system("color 80");
+    system("pause");
+    system("cls");
 
- system("color 17");
-printf("\n\n ++++++++++++++++++++++++++++++++\n\n");
+    printf("\n\nDigite seu nome: ");
+    scanf("%s", nome);
+    fflush(stdin);
 
- printf("\n\n Informe sua nota na primeira prova\n\n");
-scanf("%f",&n1[a]);
+    printf("\n\nDigite sua idade: ");
+    scanf("%d", &idade);
+    fflush(stdin);
 
- printf("\n\n Informe sua nota na segunda prova\n\n");
-scanf("%f",&n2[a]);
+    printf("\n\nDigite seu gÃªnero (Masculino ou Feminino): ");
+    scanf("%s", genero);
+    fflush(stdin);
 
- media[a]=(n1[a]+n2[a])/2;
+    printf("\n\nDigite seu peso: ");
+    scanf("%f", &peso);
+    fflush(stdin);
 
- printf("\n\n Sua média foi %.2f\n\n",media[a]);
-printf("\n\n ++++++++++++++++++++++++++++++++\n\n");
-}
+    system("pause");
+    system("cls");
 
+    printf("\nAluno: %d", i);
+    printf("\nNome: %s", nome);
+    printf("\nIdade: %d", idade);
+    printf("\nGenero: %s", genero);
+    printf("\nPeso: %.2f Kg", peso);
+    }
 
-
-return 0;
+    return 0;
 }
